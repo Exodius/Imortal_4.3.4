@@ -105,6 +105,13 @@ set(scripts_STAT_SRCS
   EasternKingdoms/Gnomeregan/instance_gnomeregan.cpp
   EasternKingdoms/Gnomeregan/gnomeregan.cpp
   EasternKingdoms/Gnomeregan/gnomeregan.h
+  EasternKingdoms/GrimBatol/boss_drahga.cpp
+  EasternKingdoms/GrimBatol/boss_erudax.cpp
+  EasternKingdoms/GrimBatol/boss_throngus.cpp
+  EasternKingdoms/GrimBatol/boss_umbriss.cpp
+  EasternKingdoms/GrimBatol/grimbatol.h
+  EasternKingdoms/GrimBatol/instance_grim_batol.cpp
+  EasternKingdoms/GrimBatol/mob_trash_grimbatol.cpp
   EasternKingdoms/zone_redridge_mountains.cpp
   EasternKingdoms/zone_ironforge.cpp
   EasternKingdoms/ScarletEnclave/chapter2.cpp
@@ -126,6 +133,12 @@ set(scripts_STAT_SRCS
   EasternKingdoms/Stratholme/boss_postmaster_malown.cpp
   EasternKingdoms/Stratholme/stratholme.h
   EasternKingdoms/Stratholme/stratholme.cpp
+  EasternKingdoms/ThroneOfTheTides/throne_of_the_tides.h
+  EasternKingdoms/ThroneOfTheTides/boss_commander_ulthok.cpp
+  EasternKingdoms/ThroneOfTheTides/boss_erunak_stonespeaker.cpp
+  EasternKingdoms/ThroneOfTheTides/boss_lady_nazjar.cpp
+  EasternKingdoms/ThroneOfTheTides/npc_neptulon.cpp
+  EasternKingdoms/ThroneOfTheTides/instance_throne_of_the_tides.cpp   
   EasternKingdoms/zone_tirisfal_glades.cpp
   EasternKingdoms/SunkenTemple/sunken_temple.cpp
   EasternKingdoms/SunkenTemple/sunken_temple.h
@@ -152,6 +165,13 @@ set(scripts_STAT_SRCS
   EasternKingdoms/SunwellPlateau/boss_brutallus.cpp
   EasternKingdoms/SunwellPlateau/sunwell_plateau.cpp
   EasternKingdoms/SunwellPlateau/boss_felmyst.cpp
+  EasternKingdoms/TheStonecore/instance_the_stonecore.cpp
+  EasternKingdoms/TheStonecore/the_stonecore.cpp
+  EasternKingdoms/TheStonecore/boss_corborus.cpp 
+  EasternKingdoms/TheStonecore/boss_slabhide.cpp
+  EasternKingdoms/TheStonecore/boss_ozruk.cpp
+  EasternKingdoms/TheStonecore/boss_priestess_azil.cpp
+  EasternKingdoms/TheStonecore/the_stonecore.h    
   EasternKingdoms/zone_stranglethorn_vale.cpp
   EasternKingdoms/Deadmines/deadmines.h
   EasternKingdoms/Deadmines/deadmines.cpp
