@@ -774,48 +774,75 @@ void Spell::EffectSchoolDMG(SpellEffIndex effIndex)
                             if (roll_chance_i(aurEff->GetAmount()))
                                 m_caster->CastSpell(unitTarget, 48301, true);
 
-                    // Shadow Orb
-                    if(Aura* shadowOrb = m_caster->GetAura(77487))
-                    {
-                        float incr = 0.10f;
-                        if(m_caster->HasAura(77486)) // Shadow Orb Mastery
-                        {
-                            float mastery = m_caster->ToPlayer()->GetFloatValue(PLAYER_MASTERY);
-                            incr += 0.0145*mastery;
-                        }
-                        damage += incr * shadowOrb->GetStackAmount();
-                        m_caster->CastSpell(m_caster,95799,true);
-                        m_caster->RemoveAurasDueToSpell(77487);
-                    }
-                    
-                    //Remove Mind Melt
-                    m_caster->RemoveAurasDueToSpell(87160);
-                    m_caster->RemoveAurasDueToSpell(81292);
-                }
-                // Mind Spike
-                if(m_spellInfo->Id == 73510)
+               // Shadow orbs
+                if (m_caster->HasAura(77487))
                 {
-                    // Shadow Orb
-                    if(Aura* shadowOrb = m_caster->GetAura(77487))
-                    {
-                        float incr = 0.10f;
-                        if(m_caster->HasAura(77486)) // Shadow Orb Mastery
-                        {
-                            float mastery = m_caster->ToPlayer()->GetFloatValue(PLAYER_MASTERY);
-                            incr += 0.0145*mastery;
-                        }
-                        damage += incr * shadowOrb->GetStackAmount();
-                        m_caster->CastSpell(m_caster,95799,true);
-                        m_caster->RemoveAurasDueToSpell(77487);
-                    }
-                    if(m_caster->HasAura(14751)) // Chakra
-                    {
-                        m_caster->CastSpell(m_caster,81209,true);
-                        m_caster->RemoveAurasDueToSpell(14751);
-                    }
+                    uint8 stack = m_caster->GetAura(77487)->GetStackAmount();
+                    uint32 pct = stack * 10;
+
+                    // Mastery
+                    if (m_caster->HasAuraType(SPELL_AURA_MASTERY)){
+                        if (m_caster->ToPlayer()->GetTalentBranchSpec(m_caster->ToPlayer()->GetActiveSpec()) == BS_PRIEST_SHADOW)
+                            pct += 1.5f * m_caster->ToPlayer()->GetMasteryPoints();
+				 }
+                    AddPctN(damage, pct);
+                    m_caster->RemoveAurasDueToSpell(77487);
+					m_caster->CastSpell(m_caster, 95799, true);//Give "Empowered Shadow" - ID:95799
                 }
+
+                //Mind Melt Aura remove
+                m_caster->RemoveAurasDueToSpell(87160);
+                m_caster->RemoveAurasDueToSpell(81292);
+                break;
+                // Smite, Mind Spike
+            case 585:
+            case 73510:
+                // Chakra: Chastise
+                if (m_caster->HasAura(14751))
+                    m_caster->CastSpell(m_caster, 81209, true);
+                break;
+            default:
                 break;
             }
+
+            // Evangelism Rank 1
+            if (m_caster->HasAura(81659))
+            {
+                // Smite | Holy Fire
+                if (m_spellInfo->Id == 585 || m_spellInfo->Id == 14914)
+                {
+                    m_caster->CastSpell(m_caster, 81660, true);
+                    m_caster->AddAura(87154, m_caster);
+                }
+            }
+
+            // Evangelism Rank 2
+            if (m_caster->HasAura(81662))
+            {
+                // Smite | Holy Fire
+                if (m_spellInfo->Id == 585 || m_spellInfo->Id == 14914)
+                {
+                    m_caster->CastSpell(m_caster, 81661, true);
+                    m_caster->AddAura(87154, m_caster);
+                }
+            }
+
+            // Shadow Word: Death - deals damage equal to damage done to caster
+            if (m_spellInfo->SpellFamilyFlags[1] & 0x2)
+            {
+                int32 back_damage = m_caster->SpellDamageBonus(unitTarget, m_spellInfo, effIndex, (uint32) damage, SPELL_DIRECT_DAMAGE);
+                // Pain and Suffering reduces damage
+                if (AuraEffect * aurEff = m_caster->GetDummyAuraEffect(SPELLFAMILY_PRIEST, 2874, 0))
+                    back_damage -= aurEff->GetAmount() * back_damage / 100;
+
+                if (back_damage < int32(unitTarget->GetHealth()))
+                    m_caster->CastCustomSpell(m_caster, 32409, &back_damage, 0, 0, true);
+                
+                if (unitTarget->HealthBelowPct(25))
+                    damage = damage * 3;
+            }
+            break;
+        }
             case SPELLFAMILY_DRUID:
             {
                 // Ferocious Bite
