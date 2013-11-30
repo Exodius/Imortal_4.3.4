@@ -21,6 +21,13 @@ set(scripts_STAT_SRCS
   EasternKingdoms/BaradinHold/boss_occuthar.cpp
   EasternKingdoms/BaradinHold/boss_pit_lord_argaloth.cpp
   EasternKingdoms/BaradinHold/instance_baradin_hold.cpp
+  EasternKingdoms/BlackrockCaverns/blackrock_caverns.h
+  EasternKingdoms/BlackrockCaverns/boss_ascendant_lord_obsidius.cpp
+  EasternKingdoms/BlackrockCaverns/boss_beauty.cpp
+  EasternKingdoms/BlackrockCaverns/boss_corla_herald_of_twilight.cpp
+  EasternKingdoms/BlackrockCaverns/boss_karsh_steelbender.cpp
+  EasternKingdoms/BlackrockCaverns/boss_romogg_bonecrusher.cpp 
+  EasternKingdoms/BlackrockCaverns/instance_blackrock_caverns.cpp    
   EasternKingdoms/BlackrockMountain/BlackrockDepths/boss_high_interrogator_gerstahn.cpp
   EasternKingdoms/BlackrockMountain/BlackrockDepths/boss_gorosh_the_dervish.cpp
   EasternKingdoms/BlackrockMountain/BlackrockDepths/blackrock_depths.cpp
