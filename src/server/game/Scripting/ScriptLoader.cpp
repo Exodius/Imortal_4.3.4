@@ -148,8 +148,21 @@ void AddSC_instance_blackwing_lair();
 void AddSC_deadmines();                      //Deadmines
 void AddSC_instance_deadmines();
 void AddSC_boss_mr_smite();
+void AddSC_boss_omnotron_defense_system();   //Blackwing Descent
+void AddSC_boss_bd_nefarian();
+void AddSC_boss_maloriak();
+void AddSC_boss_atramedes();
+void AddSC_boss_magmaw();
+void AddSC_boss_chimaeron();
+void AddSC_instance_blackwing_descent();
 void AddSC_gnomeregan();                     //Gnomeregan
 void AddSC_instance_gnomeregan();
+void AddSC_boss_drahga_shadowburner();       //Grim Batol
+void AddSC_boss_erudax();
+void AddSC_boss_throngus();
+void AddSC_boss_general_umbriss();
+void AddSC_instance_grim_batol();
+void AddSC_mob_trash_grim_batol();
 void AddSC_boss_attumen();                   //Karazhan
 void AddSC_boss_curator();
 void AddSC_boss_maiden_of_virtue();
@@ -211,6 +224,12 @@ void AddSC_boss_kirtonos_the_herald();
 void AddSC_instance_scholomance();
 void AddSC_shadowfang_keep();                //Shadowfang keep
 void AddSC_instance_shadowfang_keep();
+void AddSC_the_stonecore();                  //The Stonecore
+void AddSC_instance_the_stonecore();
+void AddSC_boss_priestess_azil();
+void AddSC_boss_ozruk();
+void AddSC_boss_slabhide();
+void AddSC_boss_corborus();
 void AddSC_boss_magistrate_barthilas();      //Stratholme
 void AddSC_boss_maleki_the_pallid();
 void AddSC_boss_nerubenkan();
@@ -234,6 +253,11 @@ void AddSC_boss_eredar_twins();
 void AddSC_boss_muru();
 void AddSC_boss_kiljaeden();
 void AddSC_sunwell_plateau();
+void AddSC_boss_lady_nazjar()				////Throne of the Tides
+void AddSC_boss_commander_ulthok();
+void AddSC_boss_erunak_stonespeaker();
+void AddSC_neptulon();
+void AddSC_instance_throne_of_the_tides();
 void AddSC_boss_archaedas();                 //Uldaman
 void AddSC_boss_ironaya();
 void AddSC_uldaman();
@@ -843,9 +867,22 @@ void AddEasternKingdomsScripts()
     AddSC_instance_blackwing_lair();
     AddSC_deadmines();                      //Deadmines
     AddSC_boss_mr_smite();
+	AddSC_boss_omnotron_defense_system(); //Blackwing Descent
+	AddSC_boss_bd_nefarian();
+	AddSC_boss_maloriak();
+	AddSC_boss_atramedes();
+	AddSC_boss_magmaw();
+	AddSC_boss_chimaeron();
+	AddSC_instance_blackwing_descent();  
     AddSC_instance_deadmines();
     AddSC_gnomeregan();                     //Gnomeregan
     AddSC_instance_gnomeregan();
+	AddSC_boss_drahga_shadowburner();       //Grim Batol
+	AddSC_boss_erudax();
+	AddSC_boss_throngus();
+	AddSC_boss_general_umbriss();
+	AddSC_instance_grim_batol();
+	AddSC_mob_trash_grim_batol();
     AddSC_boss_attumen();                   //Karazhan
     AddSC_boss_curator();
     AddSC_boss_maiden_of_virtue();
@@ -907,6 +944,12 @@ void AddEasternKingdomsScripts()
     AddSC_instance_scholomance();
     AddSC_shadowfang_keep();                //Shadowfang keep
     AddSC_instance_shadowfang_keep();
+	AddSC_the_stonecore();                  //The Stonecore
+	AddSC_instance_the_stonecore();
+	AddSC_boss_priestess_azil();
+	AddSC_boss_ozruk();
+	AddSC_boss_slabhide();
+	AddSC_boss_corborus();  
     AddSC_boss_magistrate_barthilas();      //Stratholme
     AddSC_boss_maleki_the_pallid();
     AddSC_boss_nerubenkan();
@@ -930,6 +973,11 @@ void AddEasternKingdomsScripts()
     AddSC_boss_muru();
     AddSC_boss_kiljaeden();
     AddSC_sunwell_plateau();
+	AddSC_boss_lady_nazjar();              //Throne of the Tides
+	AddSC_boss_commander_ulthok();
+	AddSC_boss_erunak_stonespeaker();
+	AddSC_neptulon();
+	AddSC_instance_throne_of_the_tides();  
     AddSC_instance_the_stockade();          //The Stockade
     AddSC_boss_archaedas();                 //Uldaman
     AddSC_boss_ironaya();
