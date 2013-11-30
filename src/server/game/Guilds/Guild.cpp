@@ -1751,11 +1751,17 @@ void Guild::HandleInviteMember(WorldSession* session, const std::string& name)
     data << uint32(m_emblemInfo.GetBorderStyle());
     data << uint32(m_emblemInfo.GetColor());
     data << uint32(m_emblemInfo.GetStyle());
+	data << uint32(1); // unk
+	data << uint32(2); // unk
+	data << uint32(3); // unk
+	data << uint32(4); // unk
     data << uint64(player->GetGUID());
     data << pInvitee->GetName();
     data << player->GetName();
     data << uint32(m_level);
     data << uint32(m_emblemInfo.GetBorderColor());
+	data << uint32(5);
+	data << uint32(m_level);
     data << uint64(guid);
     data << std::string(GetName());
     pInvitee->GetSession()->SendPacket(&data);
