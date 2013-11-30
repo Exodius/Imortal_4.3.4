@@ -18,8 +18,8 @@ set(scripts_STAT_SRCS
   EasternKingdoms/AlteracValley/boss_vanndar.cpp
   EasternKingdoms/AlteracValley/alterac_valley.cpp
   EasternKingdoms/BaradinHold/boss_alizabal.cpp
+  EasternKingdoms/BaradinHold/boss_argaloth.cpp
   EasternKingdoms/BaradinHold/boss_occuthar.cpp
-  EasternKingdoms/BaradinHold/boss_pit_lord_argaloth.cpp
   EasternKingdoms/BaradinHold/instance_baradin_hold.cpp
   EasternKingdoms/BlackrockCaverns/blackrock_caverns.h
   EasternKingdoms/BlackrockCaverns/boss_ascendant_lord_obsidius.cpp
