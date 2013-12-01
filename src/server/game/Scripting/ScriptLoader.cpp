@@ -387,6 +387,12 @@ void AddSC_instance_halls_of_origination();
 void AddSC_boss_temple_guardian_anhuur();
 void AddSC_boss_earthrager_ptah();
 void AddSC_boss_anraphet();
+void AddSC_boss_ammunae();
+void AddSC_boss_isiset();
+void AddSC_boss_rajh();
+void AddSC_boss_setesh();
+void AddSC_elementaires_sdo();
+void AddSC_trash_origine();
 void AddSC_instance_firelands();
 void AddSC_boss_alysrazor();
 void AddSC_boss_bethtilac();
@@ -1152,6 +1158,12 @@ void AddKalimdorScripts()
     AddSC_boss_temple_guardian_anhuur();
     AddSC_boss_earthrager_ptah();
     AddSC_boss_anraphet();
+	AddSC_boss_ammunae();
+	AddSC_boss_isiset();
+    AddSC_boss_rajh();
+	AddSC_boss_setesh();
+	AddSC_elementaires_sdo();
+	AddSC_trash_origine();
 
     AddSC_instance_firelands();
     AddSC_boss_alysrazor();
