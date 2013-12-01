@@ -80,6 +80,12 @@ set(scripts_STAT_SRCS
   Kalimdor/TempleOfAhnQiraj/boss_skeram.cpp
   Kalimdor/TempleOfAhnQiraj/boss_ouro.cpp
   Kalimdor/TempleOfAhnQiraj/boss_bug_trio.cpp
+  Kalimdor/VortexPinnacle/boss_altairus.cpp
+  Kalimdor/VortexPinnacle/boss_asaad.cpp
+  Kalimdor/VortexPinnacle/boss_grand_vizier_ertan.cpp
+  Kalimdor/VortexPinnacle/instance_vortex_pinnacle.cpp
+  Kalimdor/VortexPinnacle/vortex_pinnacle.cpp
+  Kalimdor/VortexPinnacle/vortex_pinnacle.h
   Kalimdor/LostCityOfTheTolvir/boss_high_prophet_barim.cpp
   Kalimdor/LostCityOfTheTolvir/boss_lockmaw.cpp
   Kalimdor/LostCityOfTheTolvir/instance_lost_city_of_the_tolvir.cpp

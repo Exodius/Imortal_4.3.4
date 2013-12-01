@@ -354,10 +354,15 @@ void AddSC_boss_landslide();
 void AddSC_boss_noxxion();
 void AddSC_boss_ptheradras();
 void AddSC_instance_maraudon();
-void AddSC_instance_lost_city_of_the_tolvir();
+void AddSC_instance_lost_city_of_the_tolvir();   // Lost City of Tolvir
 void AddSC_lost_city_of_the_tolvir();
 void AddSC_boss_high_prophet_barim();
 void AddSC_boss_lockmaw();
+void AddSC_instance_vortex_pinnacle();
+void AddSC_boss_altairus();
+void AddSC_boss_asaad();
+void AddSC_boss_grand_vizier_ertan();
+void AddSC_vortex_pinnacle();
 void AddSC_boss_onyxia();                    //Onyxia's Lair
 void AddSC_instance_onyxias_lair();
 void AddSC_boss_amnennar_the_coldbringer();  //Razorfen Downs
@@ -1106,10 +1111,15 @@ void AddKalimdorScripts()
     AddSC_boss_noxxion();
     AddSC_boss_ptheradras();
     AddSC_instance_maraudon();
-	AddSC_instance_lost_city_of_the_tolvir();
+	AddSC_instance_lost_city_of_the_tolvir();  // Lost City of Tolvir
 	AddSC_boss_high_prophet_barim();
 	AddSC_boss_lockmaw();
 	AddSC_lost_city_of_the_tolvir();
+	AddSC_instance_vortex_pinnacle();           // Vortex Pinnacle
+	AddSC_boss_altairus();
+	AddSC_boss_asaad();
+	AddSC_boss_grand_vizier_ertan();
+	AddSC_vortex_pinnacle();
     AddSC_boss_onyxia();                    //Onyxia's Lair
     AddSC_instance_onyxias_lair();
     AddSC_boss_amnennar_the_coldbringer();  //Razorfen Downs
