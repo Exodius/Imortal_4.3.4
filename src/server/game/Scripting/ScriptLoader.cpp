@@ -348,6 +348,17 @@ void AddSC_boss_mal_ganis();
 void AddSC_boss_meathook();
 void AddSC_culling_of_stratholme();
 void AddSC_instance_culling_of_stratholme();
+void AddSC_instance_dragonsoul();              // Dragon Soul
+void AddSC_dragonsoul();
+void AddSC_boss_boss_deathwings_back();
+void AddSC_boss_deathwings_madness();
+void AddSC_boss_hagara_stormbinder();
+void AddSC_boss_morchok();
+void AddSC_boss_ultraxion();
+void AddSC_boss_warlord_blackhorn();
+void AddSC_boss_yorsahj();
+void AddSC_boss_zonozz();
+void AddSC_boss_arcurion();                  // Hour Of Twilight
 void AddSC_instance_dire_maul();             //Dire Maul
 void AddSC_boss_celebras_the_cursed();       //Maraudon
 void AddSC_boss_landslide();
@@ -1111,6 +1122,17 @@ void AddKalimdorScripts()
     AddSC_boss_meathook();
     AddSC_culling_of_stratholme();
     AddSC_instance_culling_of_stratholme();
+	AddSC_instance_dragonsoul();              // Dragon Soul
+	AddSC_dragonsoul();
+	AddSC_boss_boss_deathwings_back();
+	AddSC_boss_deathwings_madness();
+	AddSC_boss_hagara_stormbinder();
+	AddSC_boss_morchok();
+	AddSC_boss_ultraxion();
+	AddSC_boss_warlord_blackhorn();
+	AddSC_boss_yorsahj();
+	AddSC_boss_zonozz();
+	AddSC_boss_arcurion();                  // Hour Of Twilight
     AddSC_instance_dire_maul();             //Dire Maul
     AddSC_boss_celebras_the_cursed();       //Maraudon
     AddSC_boss_landslide();

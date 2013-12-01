@@ -53,6 +53,17 @@ set(scripts_STAT_SRCS
   Kalimdor/CavernsOfTime/TheBlackMorass/the_black_morass.cpp
   Kalimdor/CavernsOfTime/TheBlackMorass/boss_aeonus.cpp
   Kalimdor/CavernsOfTime/TheBlackMorass/boss_temporus.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_deathwings_back.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_deathwings_madness.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_hagara_stormbinder.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_morchok.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_ultraxion.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_warlord_blackhorn.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_yorsahj.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_zonozz.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/dragonsoul.h
+  Kalimdor/CavernsOfTime/DragonSoul/instance_dragonsoul.cpp
+  Kalimdor/CavernsOfTime/HourOfTwilight/boss_arcurion.cpp
   Kalimdor/BlackfathomDeeps/boss_kelris.cpp
   Kalimdor/BlackfathomDeeps/instance_blackfathom_deeps.cpp
   Kalimdor/BlackfathomDeeps/boss_gelihast.cpp
