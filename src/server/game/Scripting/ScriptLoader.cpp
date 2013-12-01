@@ -265,7 +265,7 @@ void AddSC_boss_eredar_twins();
 void AddSC_boss_muru();
 void AddSC_boss_kiljaeden();
 void AddSC_sunwell_plateau();
-void AddSC_boss_lady_nazjar()				////Throne of the Tides
+void AddSC_boss_lady_nazjar();				////Throne of the Tides
 void AddSC_boss_commander_ulthok();
 void AddSC_boss_erunak_stonespeaker();
 void AddSC_neptulon();

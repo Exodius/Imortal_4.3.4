@@ -140,7 +140,7 @@ public:
             events.ScheduleEvent(EVENT_QUAKE, 5000 + rand()%5000);
         }
 
-        void UpdateAI(const uint32 diff)
+        void UpdateAI(uint32 diff) OVERRIDE
         {
             if (!UpdateVictim())
                 return;
@@ -155,7 +155,7 @@ public:
                 switch (eventId)
                 {
                     case EVENT_QUAKE:
-                        DoCast(me->getVictim(), SPELL_QUAKE);
+                        DoCast(me->GetVictim(), SPELL_QUAKE);
                         events.RescheduleEvent(EVENT_QUAKE, 5000 + rand()%5000);
                         return;
                 }
@@ -193,7 +193,7 @@ public:
             events.ScheduleEvent(EVENT_FELL_FIREBALL, 1000);
         }
 
-        void UpdateAI(const uint32 diff)
+        void UpdateAI(uint32 diff) OVERRIDE
         {
             if (!UpdateVictim())
                 return;
@@ -251,16 +251,16 @@ public:
 
         void MoveInLineOfSight(Unit* who) { }
 
-        void UpdateAI(const uint32 Diff)
+        void UpdateAI(uint32 Diff) OVERRIDE
         {
             if(instance->GetData(DATA_CORBORUS_EVENT) == DONE || instance->GetData(DATA_CORBORUS_EVENT) == NOT_STARTED)
                 me->DespawnOrUnsummon();
             if (_SpellBoreTimer <= Diff)
             {
                 if(!IsHeroic())
-                    DoCast(me->getVictim(),SPELL_ROCK_BORE);
+                    DoCast(me->GetVictim(),SPELL_ROCK_BORE);
                 if(IsHeroic())
-                    DoCast(me->getVictim(),H_SPELL_ROCK_BORE);
+                    DoCast(me->GetVictim(),H_SPELL_ROCK_BORE);
                 _SpellBoreTimer = 6000;
             }
             else
@@ -302,7 +302,7 @@ public:
             events.ScheduleEvent(EVENT_SHADOWFURY, 5000 + rand()%15000);
         }
 
-        void UpdateAI(const uint32 diff)
+        void UpdateAI(uint32 diff) OVERRIDE
         {
             if (!UpdateVictim())
                 return;
@@ -322,7 +322,7 @@ public:
                         events.RescheduleEvent(EVENT_MILL_FEAR, 10000);
                         return;
                     case EVENT_SHADOW_BOLT:
-                        DoCast(me->getVictim(), SPELL_SHADOW_BOLT);
+                        DoCast(me->GetVictim(), SPELL_SHADOW_BOLT);
                         events.RescheduleEvent(EVENT_SHADOWBOLT, 1000);
                         return;
                     case EVENT_FROSTBOLT_VOLLEY:

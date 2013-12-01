@@ -58,7 +58,7 @@ public:
             return false;
         }
 
-        void OnCreatureCreate(Creature* creature, bool )
+        void OnCreatureCreate(Creature* creature) OVERRIDE
         {
             switch (creature->GetEntry())
             {
@@ -115,9 +115,9 @@ public:
                SaveToDB();
         }
 
-        uint32 GetData(uint32 type)
+        uint32 GetData(uint32 data) const OVERRIDE
         {
-            switch (type)
+            switch (data)
             {
                 case DATA_GENERAL_UMBRISS_EVENT:
                     return Encounter[0];

@@ -85,7 +85,7 @@ public:
             }
         }
 
-        void UpdateAI(const uint32 Diff)
+        void UpdateAI(uint32 Diff) OVERRIDE
         {
             if (!UpdateVictim())
                 return;
@@ -144,16 +144,16 @@ public:
 
         void JustDied(Unit* /*Killer*/) {}
 
-        void UpdateAI(const uint32 Diff)
+        void UpdateAI(uint32 Diff) OVERRIDE
         {
             if (!UpdateVictim())
                 return;
 
-            if (me->IsWithinDistInMap(me->getVictim(), 2.0f))
+            if (me->IsWithinDistInMap(me->GetVictim(), 2.0f))
             {
                 if (CheckDistanceTimer <= Diff)
                 {
-                    me->CastSpell(me->getVictim(), 94679 , true);
+                    me->CastSpell(me->GetVictim(), 94679 , true);
 
                     CheckDistanceTimer = 86400*IN_MILLISECONDS;
                 } else CheckDistanceTimer -= Diff;
