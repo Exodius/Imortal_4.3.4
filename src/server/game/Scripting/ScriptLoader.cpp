@@ -242,6 +242,7 @@ void AddSC_boss_priestess_azil();
 void AddSC_boss_ozruk();
 void AddSC_boss_slabhide();
 void AddSC_boss_corborus();
+void AddSC_trash_stonecore();
 void AddSC_boss_magistrate_barthilas();      //Stratholme
 void AddSC_boss_maleki_the_pallid();
 void AddSC_boss_nerubenkan();
@@ -983,7 +984,8 @@ void AddEasternKingdomsScripts()
 	AddSC_boss_priestess_azil();
 	AddSC_boss_ozruk();
 	AddSC_boss_slabhide();
-	AddSC_boss_corborus();  
+	AddSC_boss_corborus();
+	AddSC_trash_stonecore();
     AddSC_boss_magistrate_barthilas();      //Stratholme
     AddSC_boss_maleki_the_pallid();
     AddSC_boss_nerubenkan();

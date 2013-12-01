@@ -186,7 +186,8 @@ set(scripts_STAT_SRCS
   EasternKingdoms/TheStonecore/boss_slabhide.cpp
   EasternKingdoms/TheStonecore/boss_ozruk.cpp
   EasternKingdoms/TheStonecore/boss_priestess_azil.cpp
-  EasternKingdoms/TheStonecore/the_stonecore.h    
+  EasternKingdoms/TheStonecore/the_stonecore.h
+  EasternKingdoms/TheStonecore/trash_stonecore.cpp
   EasternKingdoms/zone_stranglethorn_vale.cpp
   EasternKingdoms/Deadmines/deadmines.h
   EasternKingdoms/Deadmines/deadmines.cpp
