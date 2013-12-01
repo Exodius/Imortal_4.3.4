@@ -86,6 +86,13 @@ set(scripts_STAT_SRCS
   Kalimdor/VortexPinnacle/instance_vortex_pinnacle.cpp
   Kalimdor/VortexPinnacle/vortex_pinnacle.cpp
   Kalimdor/VortexPinnacle/vortex_pinnacle.h
+  Kalimdor/ThroneOfTheFourWinds/boss_alakir.cpp
+  Kalimdor/ThroneOfTheFourWinds/boss_conclave_of_wind.cpp
+  Kalimdor/ThroneOfTheFourWinds/
+  Kalimdor/ThroneOfTheFourWinds/
+  Kalimdor/ThroneOfTheFourWinds/instance_throne_of_the_four_winds.cpp
+  Kalimdor/ThroneOfTheFourWinds/throne_of_the_four_winds.cpp
+  Kalimdor/ThroneOfTheFourWinds/throne_of_the_four_winds.h
   Kalimdor/LostCityOfTheTolvir/boss_high_prophet_barim.cpp
   Kalimdor/LostCityOfTheTolvir/boss_lockmaw.cpp
   Kalimdor/LostCityOfTheTolvir/instance_lost_city_of_the_tolvir.cpp

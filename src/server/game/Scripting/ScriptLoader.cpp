@@ -358,7 +358,11 @@ void AddSC_instance_lost_city_of_the_tolvir();   // Lost City of Tolvir
 void AddSC_lost_city_of_the_tolvir();
 void AddSC_boss_high_prophet_barim();
 void AddSC_boss_lockmaw();
-void AddSC_instance_vortex_pinnacle();
+void AddSC_instance_vortex_pinnacle();           // Vortex Pinnacle
+void AddSC_instance_throne_of_the_four_winds();   // Throne of the Four Winds
+void AddSC_throne_of_the_four_winds();
+void AddSC_boss_alakir();
+void AddSC_boss_conclave_of_wind();
 void AddSC_boss_altairus();
 void AddSC_boss_asaad();
 void AddSC_boss_grand_vizier_ertan();
@@ -1120,6 +1124,10 @@ void AddKalimdorScripts()
 	AddSC_boss_asaad();
 	AddSC_boss_grand_vizier_ertan();
 	AddSC_vortex_pinnacle();
+	AddSC_instance_throne_of_the_four_winds();   // Throne of the Four Winds
+	AddSC_throne_of_the_four_winds();
+	AddSC_boss_alakir();
+	AddSC_boss_conclave_of_wind();
     AddSC_boss_onyxia();                    //Onyxia's Lair
     AddSC_instance_onyxias_lair();
     AddSC_boss_amnennar_the_coldbringer();  //Razorfen Downs
