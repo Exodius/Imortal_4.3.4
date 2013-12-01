@@ -413,6 +413,8 @@ void AddSC_boss_bethtilac();
 void AddSC_boss_majordomus();
 void AddSC_boss_ragnaros_cata();
 void AddSC_boss_shannox();
+void AddSC_boss_baloroc_the_doorkeeper();
+void AddSC_boss_rhyolith();
 
 void AddSC_ashenvale();
 void AddSC_azshara();
@@ -1199,6 +1201,8 @@ void AddKalimdorScripts()
 	AddSC_boss_majordomus();
 	AddSC_boss_ragnaros_cata();
 	AddSC_boss_shannox();
+	AddSC_boss_baloroc_the_doorkeeper();
+	AddSC_boss_rhyolith();
 #endif
 }
 

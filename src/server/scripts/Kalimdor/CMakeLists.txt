@@ -151,6 +151,8 @@ set(scripts_STAT_SRCS
   Kalimdor/Firelands/boss_majordomus.cpp
   Kalimdor/Firelands/boss_ragnaros_cata.cpp
   Kalimdor/Firelands/boss_shannox.cpp
+  Kalimdor/Firelands/boss_baloroc_the_doorkeeper.cpp
+  Kalimdor/Firelands/boss_rhyolith.cpp
  
 )
 
